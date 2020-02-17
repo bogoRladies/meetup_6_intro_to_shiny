@@ -1,0 +1,176 @@
+---
+title: "Let's shine with Shiny (An Intro)"
+author: "Erika Siregar [&lt;&#64;erikaris&gt;](https://twitter.com/erikaris)"
+date: '@RLadiesJakarta 6th Meetup — February 2, 2020 <br /> Mozilla Community Space,
+  Jakarta'
+output:
+  beamer_presentation:
+    incremental: yes
+  ioslides_presentation:
+    css: shiny-slides.css
+    footer: Presented at RLadies Jakarta 6th Meetup
+    incremental: yes
+    logo: images/shiny-logo.png
+    self_contained: no
+autosize: yes
+---
+
+# An Intro
+
+## What is Shiny? {.columns-2 .smaller}
+
+- an **R package** for building an **interactive web apps** straight from R.
+- can be hosted as a **standalone** apps on a webpage ; or **embed** them in R Markdown documents ; or build **dashboards**.
+- can be extended with **CSS themes**, **htmlwidgets**, and **JavaScript actions**.
+
+![](images/shiny.jpg){width=100%}
+
+## Why Shiny? {.build}
+
+1. Interactive 
+2. Animated
+
+![https://ceefluz.shinyapps.io/radar/](images/radar.gif)
+
+# Enough with Theory, Let's get our hands dirty
+
+
+## 4 Easy Steps to Build a Shiny App {.build}
+
+1. Load the Shiny library
+   ```{r eval=FALSE}
+   install.packages('shiny')
+   library('shiny')
+   ```
+2. create the UI
+3. create the server
+4. combine the UI and server 
+
+```{r eval=FALSE}
+library(shiny) 
+ui <- fluidPage(...) 
+server <- function(input, output, session) {...} 
+shinyApp(ui = ui, server = server)
+```
+
+# Let's walk through it
+
+## Warming Up {.build}
+
+### a "Hello, world" Shiny app
+
+![block1](images/hello_world2.jpg)
+
+## User Interface {.build}
+
+**Concept**: Input - Output - Render
+
+![](images/component.jpg)
+
+---
+
+See the complete list on [Shiny Cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/shiny.pdf). 
+
+![](images/inputs.jpg)
+
+## TextInput {.build}
+
+![block2](images/textInput.jpg)
+
+## Adding Plot Container {.build}
+
+![block3](images/plotContainer.jpg)
+
+## Layouting {.build}
+
+![block4](images/layout.jpg)
+
+## Let's Practice with Babynames {.build}
+
+babynames is a package contains US Baby Names used for at least 5 children of either sex, from the year of 1880-2017.
+
+```{r eval=FALSE}
+install.packages('babynames')
+library(babynames)
+```
+
+![block5](images/babynames.jpg)
+
+## Select Input {.build}
+
+![block6](images/select.jpg)
+
+## Slider {.build}
+
+![block7](images/slider.jpg)
+
+## tableOutput {.build}
+
+*Beware of the reactive variables*
+
+![block8](images/table.jpg)
+    
+## Other option for Table {.build}
+
+Using the package `DT`. 
+
+```{r eval=FALSE}
+  install.packages('DT')
+  library('DT')
+```
+
+![block9](images/dttable.jpg){width=60%}
+
+## Interactive plot with plotly {.build}
+
+```{r eval=FALSE}
+  install.packages('plotly')
+  library('plotly')
+```
+
+![block10](images/plotly.jpg){width=60%}
+
+## Working with Tabs {.build}
+
+```{r eval=FALSE}
+  ui <- fluidPage(
+  sidebarLayout(
+    sidebarPanel(___),
+    mainPanel(
+      tabsetPanel(
+        tabPanel("tab_label_1" , ___),
+        tabPanel("tab_label_2" , ___)
+      ))))
+```
+
+![block11](images/tabs.jpg)
+
+## Play with Themes {.build}
+
+```{r eval=FALSE}
+install.packages('shinythemes')
+library('shinythemes')
+```
+
+```{r eval=FALSE}
+  shinythemes::themeSelector()  # option 1
+  theme = shinythemes::shinytheme('superhero')  # option 2
+```
+![block12](images/themes.gif)
+
+## Bonus: Greeting Card {.build}
+
+![block13](images/greeting.gif)
+
+# Wrapup
+
+## Learn yourself {.build}
+
+1. [https://shiny.rstudio.com/gallery/](https://shiny.rstudio.com/gallery/)
+2. [https://github.com/rstudio/shiny-examples](https://github.com/rstudio/shiny-examples)
+
+## Any questions? {.build}
+
+Don't forget to follow Twitter: @RLadiesJakarta. 
+
+All materials are available on GitHub: [https://github.com/rladiesjakarta](https://github.com/rladiesjakarta)

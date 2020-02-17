@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Let’s shine with Shiny (An Intro)</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Let’s shine with Shiny (An Intro)',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'RLadiesJKT6_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Erika Siregar <a href="https://twitter.com/erikaris">&lt;@erikaris&gt;</a>' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="RLadiesJKT6_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="RLadiesJKT6_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="RLadiesJKT6_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="RLadiesJKT6_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+/* https://github.com/ropensci/plotly/pull/524#issuecomment-468142578 */
+slide:not(.current) .plotly.html-widget{
+  display: block;
+}
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(RLadiesJKT6_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+  <link rel="stylesheet" href="shiny-slides.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides>
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="RLadiesJKT6_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;"><span class="citation">@RLadiesJakarta</span> 6th Meetup — February 2, 2020 <br /> Mozilla Community Space, Jakarta</p>
+          </hgroup>
+  </slide>
+
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>An Intro</h2></hgroup><article  id="an-intro">
+
+</article></slide><slide class=""><hgroup><h2>What is Shiny?</h2></hgroup><article  id="what-is-shiny" class="columns-2 smaller">
+
+<ul class = 'build'>
+<li>an <strong>R package</strong> for building an <strong>interactive web apps</strong> straight from R.</li>
+<li>can be hosted as a <strong>standalone</strong> apps on a webpage ; or <strong>embed</strong> them in R Markdown documents ; or build <strong>dashboards</strong>.</li>
+<li>can be extended with <strong>CSS themes</strong>, <strong>htmlwidgets</strong>, and <strong>JavaScript actions</strong>.</li>
+</ul>
+
+<img width="100%" src='images/shiny.jpg' title=''/>
+
+</article></slide><slide class=""><hgroup><h2>Why Shiny?</h2></hgroup><article  id="why-shiny" class="build">
+
+<ol class = 'build'>
+<li>Interactive</li>
+<li>Animated</li>
+</ol>
+
+<img src='images/radar.gif' title='fig:'/><p class='caption'><a href='https://ceefluz.shinyapps.io/radar/' title=''>https://ceefluz.shinyapps.io/radar/</a></p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Enough with Theory, Let’s get our hands dirty</h2></hgroup><article  id="enough-with-theory-lets-get-our-hands-dirty">
+
+</article></slide><slide class=""><hgroup><h2>4 Easy Steps to Build a Shiny App</h2></hgroup><article  id="easy-steps-to-build-a-shiny-app" class="build">
+
+<ol class = 'build'>
+<li><p>Load the Shiny library</p>
+
+<pre class = 'prettyprint lang-r'>install.packages(&#39;shiny&#39;)
+library(&#39;shiny&#39;)</pre></li>
+<li><p>create the UI</p></li>
+<li><p>create the server</p></li>
+<li><p>combine the UI and server</p></li>
+</ol>
+
+<pre class = 'prettyprint lang-r'>library(shiny) 
+ui &lt;- fluidPage(...) 
+server &lt;- function(input, output, session) {...} 
+shinyApp(ui = ui, server = server)</pre>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Let’s walk through it</h2></hgroup><article  id="lets-walk-through-it">
+
+</article></slide><slide class=""><hgroup><h2>Warming Up</h2></hgroup><article  id="warming-up" class="build">
+
+<h3>a &ldquo;Hello, world&rdquo; Shiny app</h3>
+
+<img src='images/hello_world2.jpg' title='fig:'/><p class='caption'>block1</p>
+
+</article></slide><slide class=""><hgroup><h2>User Interface</h2></hgroup><article  id="user-interface" class="build">
+
+<p><strong>Concept</strong>: Input - Output - Render</p>
+
+<img src='images/component.jpg' title=''/>
+
+</article></slide><slide class=""><hgroup><h2></h2></hgroup><article >
+
+<p>See the complete list on <a href='https://github.com/rstudio/cheatsheets/raw/master/shiny.pdf' title=''>Shiny Cheatsheet</a>.</p>
+
+<img src='images/inputs.jpg' title=''/>
+
+</article></slide><slide class=""><hgroup><h2>TextInput</h2></hgroup><article  id="textinput" class="build">
+
+<img src='images/textInput.jpg' title='fig:'/><p class='caption'>block2</p>
+
+</article></slide><slide class=""><hgroup><h2>Adding Plot Container</h2></hgroup><article  id="adding-plot-container" class="build">
+
+<img src='images/plotContainer.jpg' title='fig:'/><p class='caption'>block3</p>
+
+</article></slide><slide class=""><hgroup><h2>Layouting</h2></hgroup><article  id="layouting" class="build">
+
+<img src='images/layout.jpg' title='fig:'/><p class='caption'>block4</p>
+
+</article></slide><slide class=""><hgroup><h2>Let’s Practice with Babynames</h2></hgroup><article  id="lets-practice-with-babynames" class="build">
+
+<p>babynames is a package contains US Baby Names used for at least 5 children of either sex, from the year of 1880-2017.</p>
+
+<pre class = 'prettyprint lang-r'>install.packages(&#39;babynames&#39;)
+library(babynames)</pre>
+
+<img src='images/babynames.jpg' title='fig:'/><p class='caption'>block5</p>
+
+</article></slide><slide class=""><hgroup><h2>Select Input</h2></hgroup><article  id="select-input" class="build">
+
+<img src='images/select.jpg' title='fig:'/><p class='caption'>block6</p>
+
+</article></slide><slide class=""><hgroup><h2>Slider</h2></hgroup><article  id="slider" class="build">
+
+<img src='images/slider.jpg' title='fig:'/><p class='caption'>block7</p>
+
+</article></slide><slide class=""><hgroup><h2>tableOutput</h2></hgroup><article  id="tableoutput" class="build">
+
+<p><em>Beware of the reactive variables</em></p>
+
+<img src='images/table.jpg' title='fig:'/><p class='caption'>block8</p>
+
+</article></slide><slide class=""><hgroup><h2>Other option for Table</h2></hgroup><article  id="other-option-for-table" class="build">
+
+<p>Using the package <code>DT</code>.</p>
+
+<pre class = 'prettyprint lang-r'>  install.packages(&#39;DT&#39;)
+  library(&#39;DT&#39;)</pre>
+
+<img width="60%" src='images/dttable.jpg' title='fig:'/><p class='caption'>block9</p>
+
+</article></slide><slide class=""><hgroup><h2>Interactive plot with plotly</h2></hgroup><article  id="interactive-plot-with-plotly" class="build">
+
+<pre class = 'prettyprint lang-r'>  install.packages(&#39;plotly&#39;)
+  library(&#39;plotly&#39;)</pre>
+
+<img width="60%" src='images/plotly.jpg' title='fig:'/><p class='caption'>block10</p>
+
+</article></slide><slide class=""><hgroup><h2>Working with Tabs</h2></hgroup><article  id="working-with-tabs" class="build">
+
+<pre class = 'prettyprint lang-r'>  ui &lt;- fluidPage(
+  sidebarLayout(
+    sidebarPanel(___),
+    mainPanel(
+      tabsetPanel(
+        tabPanel(&quot;tab_label_1&quot; , ___),
+        tabPanel(&quot;tab_label_2&quot; , ___)
+      ))))</pre>
+
+<img src='images/tabs.jpg' title='fig:'/><p class='caption'>block11</p>
+
+</article></slide><slide class=""><hgroup><h2>Play with Themes</h2></hgroup><article  id="play-with-themes" class="build">
+
+<pre class = 'prettyprint lang-r'>install.packages(&#39;shinythemes&#39;)
+library(&#39;shinythemes&#39;)</pre>
+
+<pre class = 'prettyprint lang-r'>  shinythemes::themeSelector()  # option 1
+  theme = shinythemes::shinytheme(&#39;superhero&#39;)  # option 2</pre>
+
+<img src='images/themes.gif' title='fig:'/><p class='caption'>block12</p>
+
+</article></slide><slide class=""><hgroup><h2>Bonus: Greeting Card</h2></hgroup><article  id="bonus-greeting-card" class="build">
+
+<img src='images/greeting.gif' title='fig:'/><p class='caption'>block13</p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Wrapup</h2></hgroup><article  id="wrapup">
+
+</article></slide><slide class=""><hgroup><h2>Learn yourself</h2></hgroup><article  id="learn-yourself" class="build">
+
+<ol class = 'build'>
+<li><a href='https://shiny.rstudio.com/gallery/' title=''>https://shiny.rstudio.com/gallery/</a></li>
+<li><a href='https://github.com/rstudio/shiny-examples' title=''>https://github.com/rstudio/shiny-examples</a></li>
+</ol>
+
+</article></slide><slide class=""><hgroup><h2>Any questions?</h2></hgroup><article  id="any-questions" class="build">
+
+<p>Don’t forget to follow Twitter: <span class="cite">@RLadiesJakarta</span>.</p>
+
+<p>All materials are available on GitHub: <a href='https://github.com/rladiesjakarta' title=''>https://github.com/rladiesjakarta</a></p></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
