@@ -1,1 +1,1 @@
-# meetup_6_intro_to_shiny
+# Intro_to_shiny
